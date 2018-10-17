@@ -32,7 +32,7 @@ class LoginForm extends Component {
             .then(res=>{
                 console.log(res)
                 toastr.success("Bienvenido a Gogas MAKEUP!")
-                this.props.history.push('/profile')
+                this.props.history.push('/')
             })
             .catch(e=>{
                 console.log(e)

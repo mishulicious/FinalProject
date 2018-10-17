@@ -8,6 +8,11 @@ const gallerySchema = new Schema({
       type: Schema.Types.ObjectId,
       ref:"Comment"
     }],
+    desc: String,
+    category:{
+        type: String,
+        enum: ["halloween", "party", "social"]
+    },
 },{
     timestamps:{
         createdAt:"created_at",

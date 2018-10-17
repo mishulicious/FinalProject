@@ -1,3 +1,5 @@
+
+
 body {
   margin: 0;
   padding: 0;
@@ -11,4 +13,211 @@ body {
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
+}
+
+
+.ant-layout {
+  width: 100%;
+}
+
+.steps-content {
+  margin-top: 16px;
+  border: 1px dashed #e9e9e9;
+  border-radius: 6px;
+  background-color: #fafafa;
+  min-height: 200px;
+  text-align: center;
+  background-color: transparent;
+}
+
+.steps-action {
+  margin-top: 24px;
+}
+
+
+.imageus{
+  width: 100%;
+}
+
+#us , #gallery, #value, #order{
+  padding: 4rem 0 !important;
+}
+
+.historia p{
+line-height: 1.6rem;
+text-justify: auto; 
+padding: 0 4rem;
+}
+
+h2 {
+  font-family: 'Roboto', sans-serif;
+}
+
+h4{
+  color: white !important;
+}
+
+.diagnostico {
+  height: 500px;
+}
+
+
+/* Result Component */
+
+.result {
+  font-size: 1.5rem;
+  text-align: center;
+  padding: 1.5rem 4.5rem;
+}
+
+
+/* Quiz Component */
+
+.answerOptions {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+
+/* QuestionCount Component */
+
+.questionCount {
+  padding: 1.5rem 2.5rem 0;
+  font-size: 14px;
+}
+
+
+/* Question Component */
+
+.question {
+  margin: 0;
+  padding: 0.5rem 2.5rem 1.5rem 2.5rem;
+}
+
+
+/* AnswerOption Component */
+
+.answerOption {
+  border-top: 1px solid #eee;
+}
+
+.answerOption:hover {
+  background-color: #D6BAF8;
+}
+
+.radioCustomButton {
+  position: absolute;
+  width: auto;
+  opacity: 0;
+}
+
+.radioCustomButton,
+.radioCustomLabel {
+  display: inline-block;
+  vertical-align: middle;
+  cursor: pointer;
+}
+
+.radioCustomLabel {
+  position: relative;
+  width: 100%;
+  margin: 0;
+  padding: 1.5rem 2.5rem 1.5rem 5rem;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+.radioCustomButton~.radioCustomLabel:before {
+  position: absolute;
+  top: 20px;
+  left: 38px;
+  width: 28px;
+  height: 28px;
+  content: '';
+  display: inline-block;
+  vertical-align: middle;
+  background: #fff;
+  border: 1px solid #bbb;
+  border-radius: 50%;
+  transition: all 0.3s;
+}
+
+.radioCustomButton:checked~.radioCustomLabel:before {
+  content: '';
+  background: #3C41E3 url(./svg/icon-check.svg) no-repeat;
+  background-size: 27px;
+  border-color: #3C41E3;
+}
+
+
+/* Animation */
+
+.fade-enter {
+  opacity: 0;
+}
+
+.fade-enter.fade-enter-active {
+  opacity: 1;
+  transition: opacity 0.5s ease-in-out 0.3s;
+}
+
+.fade-leave {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  opacity: 1;
+}
+
+.fade-leave.fade-leave-active {
+  opacity: 0;
+  transition: opacity 0.5s ease-in-out;
+}
+
+.fade-appear {
+  opacity: 0;
+}
+
+.fade-appear.fade-appear-active {
+  opacity: 1;
+  transition: opacity 0.5s ease-in-out;
+}
+
+
+.App {
+  text-align: center;
+}
+
+.ant-btn-danger{
+  color:#3C41E3 !important;
+  background-color: #fff !important;
+  border-color: #3C41E3 !important;
+}
+
+.ant-btn-danger:focus{
+  color:#3C41E3 !important;
+  border-color: #3C41E3 !important;
+
+}
+
+.ant-btn-danger:hover{
+  color: #fff !important;
+  background-color: #3C41E3 !important;
+  border-color: #3C41E3 !important;
+
+}
+
+
+.ant-btn-dashed:focus{
+  color:#3C41E3 !important;
+  border-color: #3C41E3 !important;
+
+}
+
+.ant-btn-dashed:hover{
+  color:#3C41E3 !important;
+  background-color: #fff !important;
+  border-color: #3C41E3 !important;
+
 }

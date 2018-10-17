@@ -60,8 +60,10 @@ app.locals.title = 'FacePainting by Gogas';
 
 const index = require('./routes/index');
 const auth = require('./routes/auth')
+const gallery = require('./routes/gallery')
 
 app.use('/', auth)
+app.use('/gallery', gallery)
 app.use('/', index);
 
  
